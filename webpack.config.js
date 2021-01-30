@@ -46,17 +46,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: "./routes",
-          to: "./routes",
-          filter(resource) {
-            return resource.match(/\.js$/);
-          },
-        },
-      ],
-    }),
-  ],
+  plugins: [],
 };
