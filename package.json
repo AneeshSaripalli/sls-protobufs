@@ -8,9 +8,7 @@
     "compile:protos": "sudo docker run -v `pwd`:/defs namely/protoc-all -d routes/protos/src -o routes/protos/gen -l web"
   },
   "dependencies": {
-    "gen": "^2.0.1",
     "protobufjs": "^6.10.2",
-    "protos": "file:./protos",
     "source-map-support": "^0.5.19",
     "ts-protoc-gen": "^0.14.0"
   },
