@@ -12,7 +12,7 @@ module.exports = {
     ? "eval-cheap-module-source-map"
     : "source-map",
   resolve: {
-    extensions: [".mjs", ".json", ".ts"],
+    extensions: [".mjs", ".json", ".ts", ".js"],
     symlinks: false,
     cacheWithContext: false,
   },
@@ -53,7 +53,6 @@ module.exports = {
           from: "./routes",
           to: "./routes",
           filter(resource) {
-            console.log(resource);
             return resource.match(/\.js$/);
           },
         },
